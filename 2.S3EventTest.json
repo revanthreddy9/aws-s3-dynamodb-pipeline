@@ -1,0 +1,38 @@
+{
+    "Records": [
+      {
+        "eventVersion": "2.1",
+        "eventSource": "aws:s3",
+        "awsRegion": "ap-south-1",
+        "eventTime": "2025-04-02T12:34:56.789Z",
+        "eventName": "ObjectCreated:Put",
+        "userIdentity": {
+          "principalId": "AWS:EXAMPLEUSER"
+        },
+        "requestParameters": {
+          "sourceIPAddress": "192.0.2.1"
+        },
+        "responseElements": {
+          "x-amz-request-id": "EXAMPLE123456789",
+          "x-amz-id-2": "EXAMPLE123/abcdefghijklmnopqrstuvwx=="
+        },
+        "s3": {
+          "s3SchemaVersion": "1.0",
+          "configurationId": "testConfigRule",
+          "bucket": {
+            "name": "serverless-data-pipeline",
+            "ownerIdentity": {
+              "principalId": "EXAMPLE"
+            },
+            "arn": "arn:aws:s3:::serverless-data-pipeline"
+          },
+          "object": {
+            "key": "data/input-test.csv",
+            "size": 1024,
+            "eTag": "EXAMPLE123456789abcdef",
+            "sequencer": "0055AED6DCD90281E5"
+          }
+        }
+      }
+    ]
+  }
